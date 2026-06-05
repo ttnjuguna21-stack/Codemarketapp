@@ -7,7 +7,7 @@ const ChatContext = createContext();
 const ChatProvider = ({ children }) => {
   const [chats, setChats] = useState([]);
   const token = localStorage.getItem("token");
-  const API_URL = "https://movie-nova-3.onrender.com";
+  const API_URL = "https://movie-nova-4.onrender.com";
   const [socket, setSocket] = useState(null);
 
 useEffect(() => {
@@ -148,10 +148,10 @@ const ChatPage = ({ chat, goBack }) => {
 const [messages, setMessages] = useState([]);
 const token = localStorage.getItem("token");
 const { socket } = useContext(ChatContext);
-const API_URL = "https://movie-nova-3.onrender.com";
+const API_URL = "https://movie-nova-4.onrender.com";
 const [input, setInput] = useState("");
 useEffect(() => {
-  fetch(`https://movie-nova-3.onrender.com/chats/${chat._id}/messages`, {
+  fetch(`https://movie-nova-4.onrender.com/chats/${chat._id}/messages`, {
     headers: {
       Authorization: `Bearer ${token}`,
     },
