@@ -29,7 +29,7 @@ export default function Login() {
         }
 
         try {
-            const res = await fetch("https://movie-nova-3.onrender.com/login", {
+            const res = await fetch("https://movie-nova-4.onrender.com/login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
