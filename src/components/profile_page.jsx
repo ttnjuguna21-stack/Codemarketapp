@@ -12,7 +12,7 @@ import {
   Lock,
   Globe
 } from "lucide-react"
-const API = "https://movie-nova-3.onrender.com";
+const API = "https://movie-nova-4.onrender.com";
 
 export default function ProfilePage() {
   const [page, setPage] = useState("profile");
