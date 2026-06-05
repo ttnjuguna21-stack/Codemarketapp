@@ -26,10 +26,10 @@ export default function SellerProfile() {
   useEffect(() => {
   const fetchData = async () => {
     try {
-      const res1 = await fetch(`https://movie-nova-3.onrender.com/seller/${id}`);
+      const res1 = await fetch(`https://movie-nova-4.onrender.com/seller/${id}`);
       const sellerData = await res1.json();
 
-      const res2 = await fetch(`https://movie-nova-3.onrender.com/seller/${id}/services`);
+      const res2 = await fetch(`https://movie-nova-4.onrender.com/seller/${id}/services`);
       const servicesData = await res2.json();
 
       setSeller(sellerData.profile);
