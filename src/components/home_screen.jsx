@@ -25,7 +25,7 @@ export default function HomePage() {
   const toggleFavorite = async (serviceId) => {
   try {
     const res = await fetch(
-      "https://movie-nova-3.onrender.com/favorites/toggle",
+      "https://movie-nova-4.onrender.com/favorites/toggle",
       {
         method: "POST",
         headers: {
@@ -50,7 +50,7 @@ export default function HomePage() {
 const rateService = async (serviceId, rating) => {
   try {
     const res = await fetch(
-      `https://movie-nova-3.onrender.com/services/${serviceId}/rate`,
+      `https://movie-nova-4.onrender.com/services/${serviceId}/rate`,
       {
         method: "POST",
         headers: {
@@ -75,8 +75,8 @@ const rateService = async (serviceId, rating) => {
     try {
         let url =
             tab === "All"
-                ? `https://movie-nova-3.onrender.com/services?category=${tab}`
-                : `https://movie-nova-3.onrender.com/services?category=${tab}`;
+                ? `https://movie-nova-4.onrender.com/services?category=${tab}`
+                : `https://movie-nova-4.onrender.com/services?category=${tab}`;
 
         if (query) {
             url += `&search=${query}`;
@@ -126,7 +126,7 @@ const rateService = async (serviceId, rating) => {
  useEffect(() => {
   const loadFavorites = async () => {
     try {
-      const res = await fetch("https://movie-nova-3.onrender.com/favorites", {
+      const res = await fetch("https://movie-nova-4.onrender.com/favorites", {
         headers: {
           token: localStorage.getItem("token")
         }
